@@ -1,0 +1,24 @@
+.td1{
+    border: solid;
+    border-color: rgb(54,136,176,1.00);
+    background-color: deepskyblue;
+
+}
+.table2{
+    width: 70%;
+    border-top: solid;
+    border-color:rgb(54,136,176,1.00) ;
+    margin-top: 30px;
+}
+.from{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.textcl{
+    color:deepskyblue ;
+}
+.name{
+    width: 100%;
+    border: 1px solid;
+}

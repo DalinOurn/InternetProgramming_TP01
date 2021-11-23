@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Register Form</title>
+<link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+	<center>
+	<form method="post">
+		<table width="70%" cellspacing="30px;">
+			<tr>
+				<td class="td1" colspan="2">
+					<p align="center" style="text-decoration: underline" ><b>Tell us about yourself</b></p>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<p class="textcl"><b>Profile Information</b></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>Last Name</div>
+					<input name="lastname" type="text" placeholder="Enter your Lastname" class="name">
+				</td>
+				<td>
+					<div>First Name</div>
+					<input name="firstname" type="text" placeholder="Enter your Firstname" class="name">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>Email</div>
+					<input name="email" type="text" placeholder="Enter your email" class="name">
+				</td>
+				<td>
+					<div>Phone number</div>
+					<input name="phone" type="number" placeholder="Enter your phone number" class="name">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<span style="padding-right: 65px">Gender</span>
+					<input name="gender" type="radio" value="male">Male
+					<input name="gender" type="radio" value="female">Female
+				</td>
+			</tr>
+		</table>
+		<table class="table2" cellspacing="30px;">
+			<tr>
+				<td colspan="3">
+					<p class="textcl"><b>Current Address</b></p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<select name="city" style="width: 80%; height: 26px;">
+						<option disabled selected>Provice / City</option>
+						 <option value="Preyveng">Preyveng</option>
+						<option value="Kampong Cham">Kampong Cham</option>
+						<option value="Phnom Penh">Phnom Penh</option>
+						<option value="Sihaknokville" >Sihaknokville</option>
+					</select>
+				</td>
+				<td>
+					<select name="Country" style="width: 80%; height: 26px;">
+						<option disabled selected>Country</option>
+						<option value="Cambodia">Cambodia</option>
+						<option value="Vietnam">Vietnam</option>
+						<option value="Singapure">Singapure</option>
+					</select>
+				</td>
+				<td>
+					<div >Post Code</div>
+					<input name="postcode" type="text" style="width: 100%; height: 20px;" placeholder="Post Code">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<div>Address</div>
+					<textarea name="address" cols="100%" rows="5" style="width:100%;" ></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<table cellspadding="20px">
+					<tr>
+						<td colspan="2">
+							<p class="textcl"><b>Skills</b></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input name="skills" type="checkbox" value="Designing">Designing
+						</td>
+						<td>
+							<input name="skills" type="checkbox" value="Code" >Coding
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input name="skills" type="checkbox" value="Debug" >Debug
+						</td>
+						<td>
+							<input name="skills" type="checkbox" value="DBMS">Database management
+						</td>
+					</tr>
+				</table>
+			</td>
+				
+				<td>
+					<table>
+						<tr>
+							<td colspan="2"><p class="textcl"><b>Languages</b></p></td>
+						</tr>
+						<tr>
+							<td>
+								<input name="language" type="checkbox" value="english">English
+							</td>
+							<td>
+								<input name="language" type="checkbox" value="Chinese">Chinese
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><input name="language" type="checkbox" value="French">French</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3"></td>
+			</tr>
+			<tr>
+				<td>
+					<p><b>From</b></p>
+					<input type="text" class="from">
+					<input type="text" class="from">
+					<input type="text" class="from">
+					<input type="text" class="from">
+				</td>
+				<td>
+					<p><b>To</b></p>
+					<input type="text" class="from">
+					<input type="text" class="from">
+					<input type="text" class="from">
+					<input type="text" class="from">
+				</td>
+				<td>
+					<p><b>Description</b></p>
+					<input type="text" class="from">
+					<input type="text" class="from">
+					<input type="text" class="from">
+					<input type="text" class="from">
+				</td>
+			</tr>
+			<tr style="margin-top:30px ">
+				<td colspan="3" >
+					<div class="textcl" style="margin-bottom: 20px;"><b>Choose your profile photo</b></div>
+					<input type="file">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" align="right">
+					<input type="submit" value="submit" placeholder="submit" style="background-color: chartreuse; width: 110px">
+				</td>
+			</tr>
+		</table>
+	</form>
+		</center>
+</body>
+</html>

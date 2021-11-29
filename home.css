@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+}
+.mainbody{
+    height: 100%;
+    position: relative;
+}
+.sidebar{
+    height: 100%;
+    width: 25%;
+    font-family:Georgia;
+    position: fixed;
+}
+.sidebar .pf{
+    width: 70px;
+    height: 70px;
+    padding-top: 45px;
+}
+.sidebar .name1{
+    font-size: 20px;
+}
+.sidebar .job1{
+    font-size: 12px;
+    color: darkgray;
+}
+#listSty{
+    list-style: none;
+    line-height: 25px;
+    font-size: 14px;
+    text-align: center;
+    padding: 0;
+}
+#listSty li{
+    position: relative;
+    border-bottom: 1px solid rgb(237, 236, 236);
+    border-top:1px solid rgb(237, 236, 236) ;
+    /* padding: 10px; */
+    margin-top: -1px;
+}
+#listSty li.active{
+    background-color: rgb(176, 235, 235);
+}
+li.active a:after{
+    background-color:#4fe9a1 ;
+    display: block;
+    position: absolute;
+    margin-right: 3px;
+    content: '';
+    right: 0;
+    bottom: 0;
+    width: 3px;
+    height: 100%;
+}
+.container{
+    background-image: url(home_page_bg_2.jpeg);
+    background-size: cover;
+    height: 100vh;
+    margin-left: 25%;
+    position: relative;
+    /* color: white; */
+}
+.bgBlur{
+    height: 100vh;
+    background-color: rgba(65, 54, 54, 0.618);
+}
+.container .text{
+    width: 100%;
+    position: absolute;
+    font-family:Georgia, Times, 'Times New Roman', serif;
+    padding-top: 90px; 
+    color: white;
+}
+
+.container .name{
+    font-size: 60px;
+    margin: 0;
+    padding-top: 50px;
+    
+}
+.container .job{
+    font-size: 15px;
+    padding-bottom:27px ; 
+    color: darkgray;
+}
+.container .text2{
+    font-size: 12px;
+    padding-left: 33px;
+    
+}
+.text2 .tablesty{
+    text-decoration: underline;
+    text-decoration-color: aqua;
+}  
+.thetable{
+    text-decoration-line: underline;
+    text-decoration-color: rgb(102, 228, 233);
+}

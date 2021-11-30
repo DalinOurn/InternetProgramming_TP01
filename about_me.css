@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+}
+.mainbody{
+    height: 100%;
+    position: relative;
+}
+.sidebar{
+    height: 100%;
+    width: 25%;
+    font-family:Georgia;
+    position: fixed;
+    /* background-color: #4fe9a1; */
+}
+.sidebar .pf{
+    width: 70px;
+    height: 70px;
+    padding-top: 45px;
+}
+.sidebar .name1{
+    font-size: 20px;
+}
+.sidebar .job1{
+    font-size: 12px;
+    color: darkgray;
+}
+#listSty{
+    list-style: none;
+    line-height: 25px;
+    font-size: 14px;
+    text-align: center;
+    padding: 0;
+}
+#listSty li{
+    position: relative;
+    border-bottom: 1px solid rgb(237, 236, 236);
+    border-top:1px solid rgb(237, 236, 236) ;
+    /* padding: 10px; */
+    margin-top: -1px;
+}
+#listSty li.active{
+    background-color: rgba(118, 187, 214, 0.459);
+}
+li.active a:after{
+    background-color:#4fe9a1 ;
+    display: block;
+    position: absolute;
+    margin-right: 3px;
+    content: '';
+    right: 0;
+    bottom: 0;
+    width: 3px;
+    height: 100%;
+}
+.social{
+    width: 10px;
+    height: 10px;
+}
+ .container{
+    height: 100%;
+    margin-left: 25%;
+    position: relative;
+    border-left: 5px solid darkgray;
+} 
+.abtitle{
+    padding-top: 14px;
+}
+.abtitle .table1{
+    background-color: rgb(24, 164, 219); 
+    color: black;
+    font-size: 15px;
+    text-align: right;
+    width: 130px;
+    height: 25px;
+    padding-top: 10px;
+    padding-right: 8px;
+}
+.abtitle .ttle{
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkgray;
+    padding-left: 8px;
+}
+.mgt{
+    margin-left: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.box{
+    width: 50%;
+    height: 260px;
+    margin-top: 40px;
+}
+.box .titl{
+    font-size: 19px;
+    text-decoration: solid;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.box .titll{
+    font-size: 12px;
+    line-height: 20px;
+    color: dimgray;
+}
+.mgt .service{
+    text-decoration: underline;
+    margin-top: 30px;
+    color: rgb(12, 130, 177);
+    margin-bottom: 30px;
+}
+.bodypic{
+    width: 50px;
+    height: 50px;
+}
+.textinTB{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.parinTB{
+    font-size: 13px;
+    padding-right: 20px;
+}
+.sizepic{
+    width: 50px;
+    height: 50px;
+}
+.funfact{
+    width: 40px;
+    height: 40px;
+    padding: 10px 20px 0px;
+}
+.fontw{
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 13px;
+    padding: 13px 20px 10px;
+}
+.collor{
+    color: rgb(240, 186, 51);
+    padding: 10px 20px 30px;
+}
+.td{
+    margin-left: 15px;
+}

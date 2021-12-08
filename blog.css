@@ -1,0 +1,345 @@
+body {
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+}
+/*my blog*/
+.sidebar{
+    height: 100%;
+    width: 21%;
+    position: fixed;
+    border-right: 9px solid darkgray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+.sidebar .pf{
+    width: 75px;
+    height: 75px;
+    padding-top: 45px;
+}
+.sidebar .name1{
+    font-size: 20px;
+    font-weight: 20px;
+}
+.sidebar .job1{
+    font-size: 12px;
+    color: darkgray;
+}
+#listSty{
+    list-style: none;
+    line-height: 25px;
+    font-size: 14px;
+    text-align: center;
+    padding: 0;
+}
+#listSty li{
+    position: relative;
+    border-bottom: 1px solid rgb(237, 236, 236);
+    border-top:1px solid rgb(237, 236, 236) ;
+    /* padding: 10px; */
+    margin-top: -1px;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+#listSty li.active{
+    background-color: rgba(228, 165, 29, 0.322);
+}
+li.active a:after{
+    background-color:rgb(228, 165, 29) ;
+    display: block;
+    position: absolute;
+    margin-right: 3px;
+    content: '';
+    right: 0;
+    bottom: 0;
+    width: 3px;
+    height: 100%;
+}
+.social{
+    width: 14px;
+    height: 14px;
+}
+/* .container1{
+    height: 100%;
+    margin-left: 21.5%;
+    position: relative;
+     background-color: rgb(103, 238, 193); 
+}  */
+/*end my blog*/
+.container {
+    border-left: 9px solid rgb(241, 241, 241);
+    height: 100vh;
+    margin-left: 22%;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.container_text {
+    position: absolute;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Treb';
+    right: 0;
+    border-left: 9px solid rgb(241, 241, 241);
+}
+
+.container .user_name {
+    font-size: 60px;
+    margin: 0px;
+    padding-top: 80px;
+}
+
+.container .user_role {
+    color: rgb(175, 175, 175);
+}
+
+.container .container_text .table_style {
+    border-spacing: 25px;
+}
+
+.container .container_text .logo table tr th.header {
+    background-color: rgb(228, 165, 29);
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    font-size: larger;
+    padding-left: 70px;
+    margin-left: 0;
+}
+
+.container .container_text .logo table tr th.dic {
+    padding-left: 30px;
+}
+
+.container .container_text .logo {
+    padding-top: 40px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.container_1
+{
+    display: flex;
+    flex-direction: row;
+   
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.container_1 .box_1{
+    background-color: rgb(255, 255, 255);
+    border: rgb(0, 0, 0);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+    padding: 0px 10px 0px 10px;
+}
+
+.box_1 img{
+    width: 20rem;
+    height: 10rem;
+    
+}
+
+.bold-text{
+font-weight: bold;
+
+}
+.date{
+    
+    background-color: gold;
+    width:50px;
+    position: absolute;
+    padding:5px;
+    border-radius: 5px;
+    color: #fff;
+}
+.date1{
+    top: 17.3rem;
+    left: 18rem;
+}
+.date2{
+    top: 17.3rem;
+    left: 40.5rem;
+}
+.date3{
+    top: 34rem;
+    left: 18rem;
+}
+.date4{
+    top: 34rem;
+    left: 40.5rem;
+}
+
+.date5{
+    top: 50.8rem;
+    left: 18rem;
+}
+.date6{
+    top: 50.8rem;
+    left: 40.5rem;
+}
+
+.date7{
+    top: 68.5rem;
+    left: 18rem;
+}
+.date8{
+    top: 68.5rem;
+    left: 40.5rem;
+}
+
+.small-icon {
+    background-color: #f1f1f1;
+    padding: 5px;
+}
+
+.spacing-top-logo {
+    margin-top: 50px;
+}
+#padding_service {
+    padding: 0px 30px 30px 30px;
+}
+
+.color-icon {
+    color: #afafaf;
+}
+
+#col_font {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+}
+
+#col_head {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline rgb(255, 251, 0);
+    border-bottom: solid 3px #ffd000d0;
+    display: inline;
+    padding-bottom: 1px;
+}
+
+#nav {
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+}
+
+#nav li {
+    position: relative;
+    padding: 10px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    border-top: 1px solid rgb(226, 226, 226);
+    margin-top: -1px;
+}
+
+#nav li.active {
+    background-color: rgb(241, 241, 241);
+}
+
+#nav li.active a::after {
+    background-color: #ffd000d0;
+    display: block;
+    position: absolute;
+    content: " ";
+    right: 0;
+    bottom: 0;
+    width: 3px;
+    height: 100%;
+}
+
+#nav a {
+    color: black;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+@media(max-width:920px){
+
+    .date2{
+        top: 34rem;
+        left: 18rem;
+    }
+    .date3{
+        top: 50.8rem;
+        left: 18rem;
+    }
+    .date4{
+        top: 67.5rem;
+        left: 18rem;
+    }
+    
+    .date5{
+        top: 84.2rem;
+        left: 18rem;
+    }
+    .date6{
+        top: 100.99rem;
+        left: 18rem;
+    }
+    .date7{
+        top: 118.8rem;
+        left: 18rem;
+    }
+    .date8{
+        top: 135.3rem;
+        left: 18rem;
+    }
+}
+@media(min-width:1432px){
+   
+    .date3{
+        top: 17rem;
+        left: 63rem;
+    }
+    .date4{
+        top: 34rem;
+        left: 18rem;
+    }
+    
+    .date5{
+        top: 34rem;
+        left: 40.5rem;
+    }
+    .date6{
+        top: 34rem;
+        left: 63rem;
+    }
+    .date7{
+        top: 51.8rem;
+        left: 18rem;
+    }
+    .date8{
+        top: 51.8rem;
+        left: 40.5rem;
+    }
+}
+
+
+@media(min-width:1894px){
+   
+    .date4{
+        top: 17rem;
+        left: 85.5rem;
+    }
+    
+    .date5{
+        top: 34rem;
+        left: 18rem;
+        
+    }
+    .date6{
+        top: 34rem;
+        left: 40.5rem;
+        
+    }
+    .date7{
+        top: 34rem;
+        left: 63rem;
+       
+    }
+    .date8{
+        top: 34rem;
+        left: 85.5rem;
+       
+    }
+}
+

@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+}
+.sidebar{
+    height: 100%;
+    width: 21%;
+    position: fixed;
+    border-right: 9px solid darkgray; 
+}
+.sidebar .pf{
+    width: 75px;
+    height: 75px;
+    padding-top: 45px;
+}
+.sidebar .name1{
+    font-size: 20px;
+    font-weight: 20px;
+}
+.sidebar .job1{
+    font-size: 12px;
+    color: darkgray;
+}
+#listSty{
+    list-style: none;
+    line-height: 25px;
+    font-size: 14px;
+    text-align: center;
+    padding: 0;
+}
+#listSty li{
+    position: relative;
+    border-bottom: 1px solid rgb(237, 236, 236);
+    border-top:1px solid rgb(237, 236, 236) ;
+    /* padding: 10px; */
+    margin-top: -1px;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+#listSty li.active{
+    background-color: rgba(228, 165, 29, 0.322);
+}
+li.active a:after{
+    background-color:rgb(228, 165, 29) ;
+    display: block;
+    position: absolute;
+    margin-right: 3px;
+    content: '';
+    right: 0;
+    bottom: 0;
+    width: 3px;
+    height: 100%;
+}
+.social{
+    width: 14px;
+    height: 14px;
+}
+.container{
+    height: 100%;
+    margin-left: 21.6%;
+    position: relative;
+    /* background-color: rgb(103, 238, 193); */
+} 
+.abtitle{
+    padding-top: 14px;
+}
+.abtitle .table1{
+    background-color: rgb(228, 165, 29); 
+    color: white;
+    font-size: 19px;
+    text-align: right;
+    width: 150px;
+    height: 35px;
+    padding-top: 10px;
+    padding-right: 8px;
+}
+.abtitle .ttle{
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(138, 136, 136);
+    padding-left: 8px;
+}
+.tb1{
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    font-size: 18px;
+
+}
+.tb1 .tbp1{
+    background-color: rgb(228, 165, 29); 
+    color: white;
+    padding: 9px 12px;
+}
+.tb1 .tdp1{
+    color:rgb(138, 136, 136) ;
+}
+.flex1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /* width: 100%; */
+}
+.flexdemins{
+    width: 200px;
+    height: 200px;
+}
+.flb1{
+    padding-left: 15px;
+    padding-top: 15px ;
+}
+ @media(max-width: 768px)
+{
+    .flex1{
+        
+        flex-direction: column;
+    }
+}
+/* @media (min-width: 400px)
+{
+    .flex1{
+        flex-direction: row;
+    }
+} */
+/* @media (max-width: 768px)
+{
+    .flex1{
+        flex-direction: column;
+        display: flex;
+        justify-content: flex;
+        flex-wrap: wrap;
+    }
+} */
+/* @media (min-width: 400px)
+{
+    .flex1{
+        flex-direction: column;
+        display: flex;
+        justify-content: flex;
+        flex-wrap: wrap;
+    }
+}  */

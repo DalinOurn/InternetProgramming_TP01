@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let promise1 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Promise 1 waits 5sec');
+        }, 5000);
+    })
+    let promise2 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Promise 2 waits 3sec');
+        }, 3000);
+    })
+    let promise3 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Promise 3 waits 1sec');
+        }, 1000);
+    })
+    let promise4 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Promise 4 waits 4sec');
+        }, 4000);
+    })
+    let promise5 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Promise 5 waits 3sec');
+        }, 3000);
+    })
+
+    console.log('Loading...');
+    Promise.all([promise1, promise2, promise3, promise4, promise5]).then((display) => {
+        console.log("All tasks are ready!");
+    }).catch(() => {
+        console.log('fail');
+    })
+</script>
+</html>

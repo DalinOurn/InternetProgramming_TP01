@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./ex5.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+         <div class="loader"></div>
+         <h3>Loading Users...</h3>
+        </div>
+     </div>
+     <h2>USER LIST</h2>
+     <div style="overflow-x:auto;">
+         <table >
+             <thead>
+                     <th>Name</th>
+                     <th>User</th>
+                     <th>Email</th>
+                     <th>Address</th>
+                     <th>Phone</th>
+                     <th>Website</th>
+                     <th>Company</th>
+             </thead>
+             <tbody id="data">
+</body>
+
+<script>
+    setTimeout(() => {
+        document.querySelector('.wrapper').style.display = "none";
+    }, 10000);
+    fetch("https://jsonplaceholder.typicode.com/users").then(
+        res=>{
+            res.json().then(
+                data=>{
+                    console.log(data);
+                    if(data.length > 0){
+                        var temp = "";
+
+                        // loop
+                        data.forEach((u)=>{
+                            temp += "<tr>";
+                            temp += "<td>"+u.name+"</td>";
+                            temp += "<td>"+u.username+"</td>";
+                            temp += "<td>"+u.email+"</td>";
+                            temp += "<td>"+u.address.street+"</td>";
+                            temp += "<td>"+u.phone+"</td>";
+                            temp += "<td>"+u.website+"</td>";
+                            temp += "<td>"+u.company.name+"</td>";
+                        })
+                        // end loop
+                        document.getElementById("data").innerHTML = temp;
+                    }
+                }
+            )
+        }
+    )
+</script>
+</html>
